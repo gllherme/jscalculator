@@ -36,7 +36,6 @@ body {
 
 .calculator--display {
     height: 4.5rem;
-    /* border: 3px solid greenyellow;  */
     background: #444d4b;
     border-radius: 10px;
     margin: .6rem;
@@ -55,13 +54,11 @@ body {
     text-align: center;
     width: 100%;
     height: 75%;
-    /* border: 3px solid greenyellow; */
     padding: 10px;
 }
 
 .keys {
     justify-content: center;
-    /* border: 1px solid red; */
     display: flex;
 }
 
@@ -74,8 +71,10 @@ body {
     border: none;
     color: #fff;
     background: #444d4b;
+    transition: ease all 0.2s;
 }
 
 .keys input:hover {
     opacity: .7;
+    border-radius: 25%;
 }
