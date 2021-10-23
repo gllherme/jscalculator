@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
 * {
     box-sizing: border-box;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 html {
@@ -7,45 +10,72 @@ html {
     height: 100vh;
 }
 
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#purple {
+    background: #8c52ff;
+}
+
+#dark-purple {
+    background: #5e17eb;
+}
+
 .calculator {
-    width:  350px;
-    height: 400px;
+    width:  18rem;
+    height: 27.7rem;
+    border-radius: 10px;
     position: fixed;
-    border: 2px solid red;
+    background: #161a19;
 }
 
 .calculator--display {
-    width: 100%;
-    height: 25%;
+    height: 4.5rem;
+    /* border: 3px solid greenyellow;  */
+    background: #444d4b;
+    border-radius: 10px;
+    margin: .6rem;
+}
+
+.display--text {
+    height: 50px;
+    width: 15rem;
+    color: #fff;
     text-align: right;
-    font-size: 80px;
-    border: 3px solid greenyellow;
+    font-size: 60px;
+    margin-left: 24px;
 }
 
 .calculator--keyboard {
     text-align: center;
     width: 100%;
     height: 75%;
-    border: 3px solid greenyellow;
+    /* border: 3px solid greenyellow; */
+    padding: 10px;
 }
 
-table {
-    width: 100%;
-    height: 100%;
-    border-collapse: collapse;
+.keys {
+    justify-content: center;
+    /* border: 1px solid red; */
+    display: flex;
 }
 
-table td {
-    width: 25%;
-    height: 20%;
+.keys input {
+    font-size: 24px;
+    height: 55px;
+    min-width: 55px;
+    margin: 5px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background: #444d4b;
 }
 
-#empty:hover {
-    opacity: 1;
-}
-
-table td:hover {
-    cursor: pointer;
-    background: red;
-
+.keys input:hover {
+    opacity: .7;
 }
