@@ -1,4 +1,4 @@
-# jscalculator (Work in progress)
+# jscalculator
 Practice project made with JS, HTML and CSS
 
 # How it Works
