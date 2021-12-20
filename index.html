@@ -9,41 +9,40 @@
 </head>
     <body>
         <div class="calculator">
-            <div class="calculator--display">
+            <div class="calculator--display" style="font-size: 34px;">
                 <div class="display--text">
                     
                 </div>
             </div>
             <div class="calculator--keyboard">
                <div class="keys">
-                    <input id="purple" type="button" value="AC" onclick="calculator.clearDisplay()">
-                    <input id="purple" type="button" value="+/-">
+                    <input id="purple" type="button" value="AC" onclick="calculator.clearButton()">
+                    <input id="purple" type="button" value="+ / -">
                     <input id="purple" type="button" value="%">
-                    <input id="dark-purple" type="button" value="/">
+                    <input id="dark-purple" type="button" value="/" onclick="calculator.operation('/')">
                </div> 
                <div class="keys">
-                    <input type="button" value="7" onclick="calculator.addNumber('oi')">
+                    <input type="button" value="7" onclick="calculator.addNumber(7)">
                     <input type="button" value="8" onclick="calculator.addNumber(8)">
                     <input type="button" value="9" onclick="calculator.addNumber(9)">
-                    <input id="dark-purple" type="button" value="x">
+                    <input id="dark-purple" type="button" value="x" onclick="calculator.operation('*')">
                </div>
                <div class="keys">
                     <input type="button" value="4" onclick="calculator.addNumber(4)">
                     <input type="button" value="5" onclick="calculator.addNumber(5)">
                     <input type="button" value="6" onclick="calculator.addNumber(6)">
-                    <input id="dark-purple" type="button" value="-">
+                    <input id="dark-purple" type="button" value="-" onclick="calculator.operation('-')">
                 </div>
                 <div class="keys">
                     <input type="button" value="1" onclick="calculator.addNumber(1)">
                     <input type="button" value="2" onclick="calculator.addNumber(2)">
                     <input type="button" value="3" onclick="calculator.addNumber(3)">
-                    <input id="dark-purple" type="button" value="+">
+                    <input id="dark-purple" type="button" value="+" onclick="calculator.operation('+')">
                </div>
                <div class="keys">
                     <input id="purple" type="button" value=",">
                     <input type="button" value="0" onclick="calculator.addNumber(0)">
-                    <input id="purple" type="button" value="del" onclick="calculator.delete()">
-                    <input id="dark-purple" type="button" value="=">
+                    <input id="equal" type="button" value="=" onclick="calculator.resultButton()">
                 </div>
             </div>
         </div>

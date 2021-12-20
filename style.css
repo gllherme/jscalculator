@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-weight: 700;
+    color: white;
 }
 
 html {
@@ -16,6 +18,9 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+
+    background: linear-gradient(116.7deg, #8C52FF 6.37%, #8C52FF 6.38%, #5E17EB 99.47%);
 }
 
 #purple {
@@ -26,12 +31,26 @@ body {
     background: #5e17eb;
 }
 
+#equal {
+    width: 100%;
+    border-radius: 73px;
+    background: #5e17eb;
+}
+
+#equal:hover {
+    border-radius: 15px;
+}
+
 .calculator {
     width:  18rem;
     height: 27.7rem;
     border-radius: 10px;
     position: fixed;
     background: #161a19;
+
+    background: linear-gradient(156.74deg, #161A19 0%, rgba(22, 26, 25, 0.69) 102.83%);
+
+    box-shadow: 9px 4px 9px 5px rgba(0, 0, 0, 0.25);
 }
 
 .calculator--display {
@@ -39,15 +58,18 @@ body {
     background: #444d4b;
     border-radius: 10px;
     margin: .6rem;
+    /* border: 1px solid greenyellow; */
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
 }
 
 .display--text {
-    height: 50px;
-    width: 15rem;
-    color: #fff;
-    text-align: right;
-    font-size: 60px;
-    margin-left: 24px;
+    /* border: 1px solid red; */
+    display: block;
+    text-align: end;
+    padding-right: 5px;
+    overflow: hidden;
 }
 
 .calculator--keyboard {
