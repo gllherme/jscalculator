@@ -6,47 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="assets/favicon.png">
+    <script src="https://kit.fontawesome.com/40f5df225f.js" crossorigin="anonymous"></script>
     <title>JS Calculator</title>
 </head>
     <body>
-        <div class="calculator">
-            <div class="calculator--display" style="font-size: 34px;">
-                <div class="display--text">
-                    
+        <div class="calculator-container">
+            <div class="calculator">
+                <div class="calculator--display" style="font-size: 34px;">
+                    <div class="display--text">
+                        
+                    </div>
                 </div>
-            </div>
-            <div class="calculator--keyboard">
-               <div class="keys">
-                    <input id="purple" type="button" value="AC" onclick="calculator.clearButton()">
-                    <input id="purple" type="button" value="+ / -">
-                    <input id="purple" type="button" value="%">
-                    <input id="dark-purple" type="button" value="/" onclick="calculator.operation('/')">
-               </div> 
-               <div class="keys">
-                    <input type="button" value="7" onclick="calculator.addNumber(7)">
-                    <input type="button" value="8" onclick="calculator.addNumber(8)">
-                    <input type="button" value="9" onclick="calculator.addNumber(9)">
-                    <input id="dark-purple" type="button" value="x" onclick="calculator.operation('*')">
-               </div>
-               <div class="keys">
-                    <input type="button" value="4" onclick="calculator.addNumber(4)">
-                    <input type="button" value="5" onclick="calculator.addNumber(5)">
-                    <input type="button" value="6" onclick="calculator.addNumber(6)">
-                    <input id="dark-purple" type="button" value="-" onclick="calculator.operation('-')">
-                </div>
-                <div class="keys">
-                    <input type="button" value="1" onclick="calculator.addNumber(1)">
-                    <input type="button" value="2" onclick="calculator.addNumber(2)">
-                    <input type="button" value="3" onclick="calculator.addNumber(3)">
-                    <input id="dark-purple" type="button" value="+" onclick="calculator.operation('+')">
-               </div>
-               <div class="keys">
-                    <input id="purple" type="button" value=",">
-                    <input type="button" value="0" onclick="calculator.addNumber(0)">
-                    <input id="equal" type="button" value="=" onclick="calculator.resultButton()">
+                <div class="calculator--keyboard">
+                   <div class="keys">
+                        <input id="purple" type="button" value="AC" onclick="calculator.clearButton()">
+                        <input id="purple" type="button" value="+ / -">
+                        <input id="purple" type="button" value="%">
+                        <input id="dark-purple" type="button" value="/" onclick="calculator.operation('/')">
+                   </div> 
+                   <div class="keys">
+                        <input type="button" value="7" onclick="calculator.addNumber(7)">
+                        <input type="button" value="8" onclick="calculator.addNumber(8)">
+                        <input type="button" value="9" onclick="calculator.addNumber(9)">
+                        <input id="dark-purple" type="button" value="x" onclick="calculator.operation('*')">
+                   </div>
+                   <div class="keys">
+                        <input type="button" value="4" onclick="calculator.addNumber(4)">
+                        <input type="button" value="5" onclick="calculator.addNumber(5)">
+                        <input type="button" value="6" onclick="calculator.addNumber(6)">
+                        <input id="dark-purple" type="button" value="-" onclick="calculator.operation('-')">
+                    </div>
+                    <div class="keys">
+                        <input type="button" value="1" onclick="calculator.addNumber(1)">
+                        <input type="button" value="2" onclick="calculator.addNumber(2)">
+                        <input type="button" value="3" onclick="calculator.addNumber(3)">
+                        <input id="dark-purple" type="button" value="+" onclick="calculator.operation('+')">
+                   </div>
+                   <div class="keys">
+                        <input id="purple" type="button" value=",">
+                        <input type="button" value="0" onclick="calculator.addNumber(0)">
+                        <input id="equal" type="button" value="=" onclick="calculator.resultButton()">
+                    </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <p>by Guilherme Campos</p>
+            <a href="https://github.com/gllherme" target="blank"><i class="fab fa-github" style="font-size: 1.5em;"></i></a>
+        </footer>
         <script src="./script.js"></script>
     </body>
 </html>

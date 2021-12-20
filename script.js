@@ -8,7 +8,7 @@ const calculator = {
     addNumber(number) {
         if(this.display.length < 16) {
             this.display.push(number);
-            console.log(calculator.display);
+            // console.log(calculator.display);
             calculator.updateDisplay();
         } else {
             return {}
@@ -18,7 +18,7 @@ const calculator = {
     clearDisplay() {
         calculator.display.length = 0;
         calculator.updateDisplay();
-        console.log(calculator.display);
+        // console.log(calculator.display);
     },
 
     updateDisplay() {
