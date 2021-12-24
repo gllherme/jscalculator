@@ -24,6 +24,13 @@ const calculator = {
     updateDisplay() {
         const newDisplay = calculator.display.join("");
         let content = document.querySelector('.display--text');
+
+        if (this.display.length < 9) {
+            content.style.fontSize = "76px"
+        } else {
+            content.style.fontSize = `${68 - (this.display.length - 5) * 3}px`
+        }
+
         content.innerHTML = newDisplay;
     },
 
