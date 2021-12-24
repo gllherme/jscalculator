@@ -127,3 +127,20 @@ footer {
     justify-content: center;
 
 }
+
+::-webkit-scrollbar {
+    width: .1px;
+}
+
+::-webkit-scrollbar-track {
+    background: #161a19;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444d4b;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
